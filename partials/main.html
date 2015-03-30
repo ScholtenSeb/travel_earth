@@ -1,0 +1,40 @@
+<div class="container-fluid head">
+  <div class="row ss-search text-center">
+    <span class="explore-text visible-lg">Go Explore</span>
+      <form class="ss-form-search"> 
+        <div class="text-center">
+          <input type="email" id="exampleInputEmail3" placeholder="Tell us your destination">
+          <button type="submit">Search</button>
+        </div>
+      </form>
+  </div>
+</div>
+
+<div class="container services">
+	<div class="row text-center custom-text">
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+			<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+			<h3>Travel</h3>
+			<p>This is placeholder text. Its work is to take up space on this website. That is all.</p>
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+			<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+			<h3>Explore</h3>
+			<p>This is placeholder text. Its work is to take up space on this website. That is all.</p>
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+			<span class="glyphicon glyphicon-fire" aria-hidden="true"></span>
+			<h3>People</h3>
+			<p>This is placeholder text. Its work is to take up space on this website. That is all.</p>
+		</div>
+	</div>
+</div>
+
+<div class="container destinations">
+    <a ng-repeat="place in places" href="#/place/{{place.title}}">
+        <div style="background-image:url('img/{{place.img}}');" class="{{place.size}}">
+            <h2>{{place.title}}</h2>
+        </div>
+    </a>
+   
+</div>
