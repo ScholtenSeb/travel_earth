@@ -3,6 +3,7 @@
 angular.module('TravelApp', ['ngRoute'])
 .controller('MainController', [ '$scope' , MainController] )
 .controller('PlaceController', [ '$scope', '$routeParams' , PlaceController] )
+.controller('PlacesController', [ '$scope', PlacesController] )
 .config( AppConfig );
 
 function MainController ($scope) {
@@ -15,12 +16,19 @@ function PlaceController ($scope, $routeParams) {
 	$scope.tPlace = place[0];
 }
 
+function PlacesController ($scope) {
+	$scope.places = TravelData.places;
+}
+
 function AppConfig ($routeProvider) {
 	$routeProvider.when('/', {
 		templateUrl : 'partials/main.html'
 	}).when('/place/:title', {
 		templateUrl : 'partials/place.html',
 		controller : 'PlaceController'
+	}).when('/places', {
+		templateUrl : 'partials/places.html',
+		controller : 'PlacesController'
 	}).otherwise({
 		redirectTo	: '/'
 	});

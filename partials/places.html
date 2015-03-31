@@ -1,0 +1,7 @@
+<div class="container destinations">
+    <a ng-repeat="place in places" href="#/place/{{place.title}}">
+        <div style="background-image:url('img/{{place.img}}');" class="{{place.size}}">
+            <h2>{{place.title}}</h2>
+        </div>
+    </a>
+</div>

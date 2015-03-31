@@ -36,23 +36,6 @@ body {
 .custom-text span {
 	font-size: 1.8em;
 }
-/*nav {
-	float: left;
-	margin-right: 50px;
-}
-nav * {
-	line-height: 50px!important;
-}
-.navbar-header span {
-	background: #fff;
-}
-.navbar-header button {
-	height: 64px;
-}
-.navbar-text {
-	line-height: 50px;
-	margin-right: 20px!important;
-}*/
 .ss-search {
 	position: relative;
 	top: 250px;
@@ -99,6 +82,9 @@ nav * {
 .services {
 	margin-top: 30px;
 	margin-bottom: 30px;
+}
+.destinations {
+	margin-top: 60px;
 }
 .destinations div {
 	position: relative;
